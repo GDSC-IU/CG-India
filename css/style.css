@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap');
+
+body {
+  font-family: 'Source Serif Pro', serif;
+	font-weight: 400;
+}
+
+a.text-white-50:hover {
+	color: #fff!important;
+}
+
+.carousel-item>img {
+	height: 70vh;
+}
+
+@media (max-width: 576px) {
+	.carousel-item>img {
+		height: 30vh;
+	}
+}
