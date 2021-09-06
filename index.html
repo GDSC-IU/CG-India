@@ -20,7 +20,6 @@
 
 <body>
 	<header id="home">
-
 		<nav class="d-none navbar d-lg-block navbar-dark bg-primary p-1">
 			<div class="container p-0">
 					<div class="col text-white-50">
@@ -54,7 +53,7 @@
 					<img src="./assets/image/favicon.jpg" alt="Logo" width="24" class="d-inline-block align-text-top rounded-circle">
 					<span class="align-bottom mx-2">CG India</span>
 				</a>
-				<button class="navbar-toggler" type="button" 	data-bs-toggle="collapse" data-bs-target="#collapseNavbar" aria-controls="collapseNavbar" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" 	data-bs-toggle="collapse" data-bs-target="#collapseNavbar" aria-controls="collapseNavbar" onblur="remove();" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse justify-content-end"	id="collapseNavbar">
@@ -84,13 +83,13 @@
 							</ul>
 						</div>
 						<div class="nav-item">
-							<a href="#" class="nav-link">
+							<a href="#service" class="nav-link">
 								<i class="fas fa-concierge-bell fa-fw"></i>
 								Services
 							</a>
 						</div>
 						<div class="nav-item">
-							<a href="#" class="nav-link">
+							<a href="#contact" class="nav-link">
 								<i class="fas fa-id-badge fa-fw"></i>
 								Contact Us
 							</a>
@@ -173,10 +172,13 @@
 	</div>
 
 	<!-- Registration Modal -->
+	<div class="modal fade" id="register">
+
+	</div>
 
 	<main>
 		<!-- carousel-dark for dark controls -->
-		<div id="carousel" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+		<div id="carousel" class="carousel carousel-dark slide carousel-fade pt-1 pt-md-0" data-bs-ride="carousel">
 			<div class="carousel-indicators">
 				<button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 				<button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -277,8 +279,15 @@
 			</div>
 		</div>
 
-		<div class="container-fluid text-center text-white">
-			<div class="row first py-3 mt-5">
+		<div class="container-fluid text-center">
+			<div class="row pt-5" id="service">
+				<div class="col text-center">
+					<h1>Services</h1>
+					<hr class="w-25 mx-auto">
+				</div>
+			</div>
+
+			<div class="row first py-3 mt-3 text-white">
 				<div class="col-12 col-md-4 d-block m-auto">
 					<div class="d-block m-auto py-2 icon-setting bg-white rounded-circle">
 						<i class="fas fa-hand-holding-heart fa-4x fa-fw fcolor m-2"></i>
@@ -308,7 +317,7 @@
 				</div>
 			</div>
 
-			<div class="row second mt-5 pt-4 pb-3">
+			<div class="row second mt-5 pt-4 pb-3 text-white">
 				<div class="col-6 col-md-4 col-lg-2 set-text mb-2">
 					<h4 class="">10,120</h4>
 					<h6 class="d-block m-0 swachh">Swachh Bharat</h6>
@@ -342,6 +351,37 @@
 			</div>
 		</div>
 
+		<div class="container">
+			<div class="row pt-5" id="contact">
+				<div class="col text-center">
+					<h1>Contact Us</h1>
+					<hr class="w-50 mx-auto">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-md-6 mx-auto">
+					<form action="./php/complain.php" method="POST">
+						<div class="mb-3">
+							<label for="cname" class="form-label"><i class="fas fa-user fa-fw"></i> Your Name</label>
+							<input type="text" class="form-control" name="cname" id="cname" placeholder="Enter your name..." required>
+						</div>
+						<div class="mb-3">
+							<label for="cmail" class="form-label"><i class="fas fa-paper-plane fa-fw"></i> E-Mail</label>
+							<input type="email" class="form-control" name="cmail" id="cmail" placeholder="abc123@xyz.com" required>
+						</div>
+						<div class="mb-3">
+							<label for="message" class="form-label"><i class="fas fa-comment-alt fa-fw"></i> Query Details</label>
+							<textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message..." required></textarea>
+						</div>
+						<div class="mt-4">
+							<button type="submit" class="btn btn-primary w-100">Send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
 	</main>
 
 	<footer class="mt-5 text-center fw-bold p-3 bg-secondary bg-opacity-25">
@@ -356,6 +396,7 @@
 					<a href="#" class="mx-2 text-dark social"><i class="fab fa-github-square fa-2x"></i></a>
 				</div>
 			</div>
+
 			<div class="row">
 				<div class="col">
 					<ul class="nav justify-content-center">
@@ -374,6 +415,7 @@
 					</ul>
 				</div>
 			</div>
+
 			<div class="row mt-4">
 				<div class="col">
 					<h6 class="fw-bolder">Made With Love <i class="fas fa-heart text-danger"></i> CG India</h6>

@@ -21,3 +21,8 @@ function fitframe() {
 		document.getElementById('iframe').src = src2;
 	}
 }
+
+// document.getElementById('collapseNavbar').addEventListener('blur', remove);
+function remove() {
+	document.getElementById('collapseNavbar').classList.remove('show');
+};
