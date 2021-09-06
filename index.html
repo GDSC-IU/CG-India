@@ -21,7 +21,7 @@
 <body>
 	<header id="home">
 
-		<nav class="d-none navbar d-md-block navbar-dark bg-primary p-1">
+		<nav class="d-none navbar d-lg-block navbar-dark bg-primary p-1">
 			<div class="container p-0">
 					<div class="col text-white-50">
 						Helpline: 
@@ -48,7 +48,7 @@
 			</div>
 		</nav>
 
-		<nav id="navbar" class="navbar navbar-expand-md bg-dark navbar-dark">
+		<nav id="navbar" class="navbar navbar-expand-lg bg-dark navbar-dark">
 			<div class="container-fluid">
 				<a href="index.html" class="navbar-brand mx-sm-4">
 					<img src="./assets/image/favicon.jpg" alt="Logo" width="24" class="d-inline-block align-text-top rounded-circle">
@@ -75,7 +75,7 @@
 									<i class="fas fa-users fa-fw"></i>
 									Us
 								</a></li>
-								<li><a class="dropdown-item" href="#">
+								<li><a class="dropdown-item" href="#mission">
 									<i class="fas fa-bullseye fa-fw"></i>
 									Our Mission
 								</a></li>
@@ -145,10 +145,10 @@
 							<input type="password" class="form-control" name="pwd" id="pwd" placeholder="Your Password" required>
 						</div>
 						<div class="mb-3 row">
-							<div class="col-3">
-								<label for=""><i class="far fa-question-circle fa-fw"></i>Account Type</label>
+							<div class="col-6 col-sm-4">
+								<label for=""><i class="far fa-question-circle fa-fw"></i> Account Type</label>
 							</div>
-							<div class="col-9">
+							<div class="col-6 col-sm-8">
 								<div class="form-check form-check-inline">
 									<input class="form-check-input" type="radio" name="category" id="person" value="person" checked>
 									<label class="form-check-label fw-normal" for="person">Contributor</label>
@@ -212,40 +212,164 @@
 		</div>
 
 		<div class="container">
-			<div class="row" id="about">
-				<div class="col">
-					
+			<div class="row pt-5" id="about">
+				<div class="col text-center">
+					<h1>About Us</h1>
+					<hr class="w-50 mx-auto">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-lg-6 align-self-center">
+					<img src="./assets/image/logobg.jpeg" alt="Logo" class="img-fluid">
+				</div>
+				<div class="col-12 col-lg-6">
+					<h3 class="text-center mt-4">CG India</h3>
+					<hr class="w-25 mx-auto my-0">
+					<p class="mt-3">
+						To accelerate the efforts to achieve universal sanitation coverage and to put focus on sanitation, the Prime Minister of India launched the Swachh Bharat Mission on 2nd October, 2014. The Mission Coordinator for SBM is Secretary, Department of Drinking Water and Sanitation (DDWS), Ministry of Jalshakti with two Sub-Missions, the Swachh Bharat Mission (Gramin) and the Swachh Bharat Mission (Urban). Together, they aim to achieve Swachh Bharat by 2019, as a fitting tribute to Mahatma Gandhi on his 150th Birth Anniversary.
+						<br>
+					</p>
+					<p>
+						CG India is an initiative by us for a clean & green India dream. We are trying to clean Indian roads, societies, public places, etc. by getting details from the local residential people there. 
+					</p>
+				</div>
+			</div>
+
+			<div class="row mt-3">
+				<div class="col text-center">
+					<iframe src="./assets/pdf/CGI.pdf#zoom=136.5%" frameborder="0" class="w-100" id='iframe'></iframe>
 				</div>
 			</div>
 		</div>
+
+		<div class="container">
+			<div class="row pt-5" id="mission">
+				<div class="col text-center">
+					<h1>Our Mission</h1>
+					<hr class="w-50 mx-auto">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col text-center">
+					<iframe id="modi" src="https://www.youtube.com/embed/HmtxA_iXvbY?start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+
+			<div class="row mt-5">
+				<div class="col-12 col-lg-6 align-self-center">
+					<img src="./assets/image/mission.jpg" alt="Mission Images" class="img-fluid">
+				</div>
+				<div class="col-12 col-lg-6">
+					<h3 class="text-center mt-4">
+						Welcome to <span class="text-danger text-decoration-underline">CG India</span> - An initiative for Swachh Bharat Abhiyaan
+					</h3>
+					<hr class="w-50 mx-auto my-0">
+					<p class="mt-3">
+						The Swachh Bharat Abhiyan is the most significant cleanliness campaign by the Government of India. Shri Narendra Modi led a cleanliness pledge at India Gate, which about thirty lakh government employees across the country joined.
+					</p>
+					<p class="fw-bold">
+						As a part of this mission, local people can upload a issue which need immediate cleanliness, after there request is received, we will send our men there for cleanliness.<br>
+						After cleanliness, we will contact the person who registred the issue for feedback.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid text-center text-white">
+			<div class="row first py-3 mt-5">
+				<div class="col-12 col-md-4 d-block m-auto">
+					<div class="d-block m-auto py-2 icon-setting bg-white rounded-circle">
+						<i class="fas fa-hand-holding-heart fa-4x fa-fw fcolor m-2"></i>
+					</div>
+					<h4 class="mt-3">Quality of Life</h4>
+					<p class="mt-3 copy">
+						To bring about an improvement in the general quality of life in the rural areas, by promoting cleanliness, hygiene and eliminating open defecation.
+					</p>
+				</div>
+				<div class="col-12 col-md-4 d-block m-auto">
+					<div class="d-block m-auto py-2 icon-setting bg-white rounded-circle">
+						<i class="far fa-snowflake fa-5x fa-fw fcolor"></i>
+					</div>
+					<h4 class="mt-3">Sustainable Sanitation</h4>
+					<p class="mt-3 copy">
+						To motivate communities to adopt sustainable sanitation practices and facilities through awareness creation and health education.
+					</p>
+				</div>
+				<div class="col-12 col-md-4 d-block m-auto">
+					<div class="d-block m-auto py-2 icon-setting bg-white rounded-circle">
+						<i class="fas fa-user-friends fa-4x fa-fw fcolor mt-2"></i>
+					</div>
+					<h4 class="mt-3">Promote Social Inclusion</h4>
+					<p class="mt-3 copy">
+						To create significant positive impact on gender and promote social inclusion by improving sanitation especially in marginalized communities.
+					</p>
+				</div>
+			</div>
+
+			<div class="row second mt-5 pt-4 pb-3">
+				<div class="col-6 col-md-4 col-lg-2 set-text mb-2">
+					<h4 class="">10,120</h4>
+					<h6 class="d-block m-0 swachh">Swachh Bharat</h6>
+					<h6 class="d-block">Pledges Taken</h6>
+				</div>
+				<div class="col-6 col-md-4 col-lg-2 set-text mb-2">
+					<h4 class="">3,731</h4>
+					<h6 class="d-block m-0 swachh">Swachh Bharat</h6>
+					<h6 class="d-block">Challenges Taken</h6>
+				</div>
+				<div class="col-6 col-md-4 col-lg-2 set-text mb-2">
+					<h4 class="">3,800</h4>
+					<h6 class="d-block m-0 swachh">Swachh Bharat</h6>
+					<h6 class="d-block">Activities Done</h6>
+				</div>
+				<div class="col-6 col-md-4 col-lg-2 set-text mb-2">
+					<h4 class="">7,165</h4>
+					<h6 class="d-block m-0 swachh">Swachh Bharat</h6>
+					<h6 class="d-block">Active Participants</h6>
+				</div>
+				<div class="col-6 col-md-4 col-lg-2 set-text">
+					<h4 class="">1,00,111</h4>
+					<h6 class="d-block m-0 swachh">Swachh Bharat</h6>
+					<h6 class="d-block">Contributed Hours</h6>
+				</div>
+				<div class="col-6 col-md-4 col-lg-2 set-text">
+					<h4 class="">683</h4>
+					<h6 class="d-block m-0 swachh">Swachh Bharat</h6>
+					<h6 class="d-block">Pakhwada Activities</h6>
+				</div>
+			</div>
+		</div>
+
 	</main>
 
 	<footer class="mt-5 text-center fw-bold p-3 bg-secondary bg-opacity-25">
 		<div class="container">
 			<div class="row">
-				<div class="col mb-3 social">
-					<a href="#" class="mx-2 text-dark"><i class="fab fa-facebook-square fa-2x"></i></a>
-					<a href="#" class="mx-2 text-dark"><i class="fab fa-instagram-square fa-2x"></i></a>
-					<a href="#" class="mx-2 text-dark"><i class="fab fa-twitter-square fa-2x"></i></a>
-					<a href="https://www.linkedin.com/in/bhavesh-kothari-4687a3202/" class="mx-2 text-dark"><i class="fab fa-linkedin fa-2x"></i></a>
-					<a href="#" class="mx-2 text-dark"><i class="fab fa-youtube-square fa-2x"></i></a>
-					<a href="#" class="mx-2 text-dark"><i class="fab fa-github-square fa-2x"></i></a>
+				<div class="col mb-3">
+					<a href="#" class="mx-2 text-dark social"><i class="fab fa-facebook-square fa-2x"></i></a>
+					<a href="#" class="mx-2 text-dark social"><i class="fab fa-instagram-square fa-2x"></i></a>
+					<a href="#" class="mx-2 text-dark social"><i class="fab fa-twitter-square fa-2x"></i></a>
+					<a href="https://www.linkedin.com/in/bhavesh-kothari-4687a3202/" class="mx-2 text-dark social"><i class="fab fa-linkedin fa-2x"></i></a>
+					<a href="#" class="mx-2 text-dark social"><i class="fab fa-youtube-square fa-2x"></i></a>
+					<a href="#" class="mx-2 text-dark social"><i class="fab fa-github-square fa-2x"></i></a>
 				</div>
 			</div>
-			<div class="row social">
+			<div class="row">
 				<div class="col">
 					<ul class="nav justify-content-center">
 						<li class="nav-item">
-							<a class="nav-link" href="#home">Home</a>
+							<a class="nav-link social" href="#home">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#about">About</a>
+							<a class="nav-link social" href="#about">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#service">Services</a>
+							<a class="nav-link social" href="#service">Services</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#contact">Contact</a>
+							<a class="nav-link social" href="#contact">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -253,7 +377,7 @@
 			<div class="row mt-4">
 				<div class="col">
 					<h6 class="fw-bolder">Made With Love <i class="fas fa-heart text-danger"></i> CG India</h6>
-					<p class="mt-3 fw-bold">&copy; 2021 CG India | All Rigths Are Reserved</p>
+					<p class="mt-3 fw-bold copy">&copy; 2021 CG India | All Rigths Are Reserved</p>
 				</div>
 			</div>
 		</div>
