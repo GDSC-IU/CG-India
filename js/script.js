@@ -24,5 +24,5 @@ function fitframe() {
 // document.getElementById('collapseNavbar').addEventListener('blur', remove);
 // function remove() {
 // 	document.getElementById('collapseNavbar').classList.remove('show');
-	// document.getElementById('collapseNavbar').style.display = none;
+// 	// document.getElementById('collapseNavbar').style.display = none;
 // };

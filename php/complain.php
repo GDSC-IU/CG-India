@@ -1,9 +1,8 @@
 <?php
-
 	$name = $_POST['cname'];
 	$from = $_POST['cmail'];
 	$msg = $_POST['message'];
-	$to = 'bhaveshkothari.19.cs@iite.indusuni.ac.in';
+	$to = 'bkj281@gmail.com';
 	$header = 'From: bkj281@gmail.com';
 	
 	$msg = 'Name: '.$name.'
@@ -16,12 +15,17 @@
 	$email = mail($to, 'Complaint', $msg, $header);
 
 	if ($email) {
-		echo '<script type="text/javascript">alert("Complain Sent");</script>';
-		header ("location:../index.html");
+		echo '<script type="text/javascript">
+			alert("Complain Sent");
+			window.open("../index.html", "_self");
+		</script>';		
+		// header ("location:../index.html");
 	}
 	else {
-		echo '<script type="text/javascript">alert("An Error Occured");</script>';
-		header ("location:../index.html");
+		echo '<script type="text/javascript">
+			alert("An Error Occured");
+			window.open("../index.html", "_self");
+		</script>';
+		// header ("location:../index.html");
 	}
-
 ?>
